@@ -125,12 +125,12 @@
   to { left: 20px; }
 }
 /* esercizio 13 */
-.ex-13-button:hover .ex-13-top-white {
+/* .ex-13-button:hover .ex-13-top-white {
   animation-name: bottone-top;
   animation-duration: 5s;
   animation-timing-function: linear;
   /* animation-iteration-count: 2; */
-  animation-direction: alternate;
+  /* animation-direction: alternate; */
 }
 
 @keyframes bottone-top {
@@ -150,4 +150,4 @@
 @keyframes bottone-bottom {
   from { left: 95px; }
   to { left: 20px; }
-}
+} */
