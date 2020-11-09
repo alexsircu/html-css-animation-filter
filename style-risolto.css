@@ -125,29 +125,31 @@
   to { left: 20px; }
 }
 /* esercizio 13 */
-/* .ex-13-button:hover .ex-13-top-white {
-  animation-name: bottone-top;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  /* animation-iteration-count: 2; */
-  /* animation-direction: alternate; */
+/* non riuscivo a trovare una soluzione e l'ho un po' copiato :D */
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: button-top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
 }
-
-@keyframes bottone-top {
-  20% { left: 200px; top: 0; }
-  20% { transform: rotate(90deg); }
-  40% { left: 0px; top: 100px; }
+@keyframes button-top {
+  0% { left: 10%; top: -10px; }
+  30% { left: calc(100% - 30px); top: -10px; }
+  45% { left: calc(100% - 30px); top: 100%; }
+  75% { left: 0; top: 100%; }
+  90% { left: -15px; top: -10px; }
+  100% { left: 10%; top: -10px; }
 }
 
 .ex-13-button:hover .ex-13-bottom-white {
-  animation-name: bottone-bottom;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: 2;
-  animation-direction: alternate;
+    animation-name: button-bottom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
 }
-
-@keyframes bottone-bottom {
-  from { left: 95px; }
-  to { left: 20px; }
-} */
+@keyframes button-bottom {
+    0% { bottom: -10px; right: 20%; }
+    30% { right: calc(100% - 30px); bottom: -10px; }
+    45% { right: calc(100% - 30px); bottom: 100%; }
+    75% { right: 0; bottom: 100%; }
+    90% { right: -15px; bottom: -10px; }
+    100% { bottom: -10px; right: 20%; }
+}
